@@ -1,8 +1,8 @@
 #seed_jobs:  #uncomment this line to overwrite the default setup. Lease as is for adding setup
-  tci-master-sanity-check1:
+  tci-maven-app-ci-build:
     source:
-      remote: https://github.com/TikalCI/tci-pipelines.git
-      branch: '\${TCI_PIPELINES_BRANCH}'
-    pipeline: src/pipelines/bootstrap/tci-master-sanity-check/Jenkinsfile
+      remote: https://github.com/TikalCI/tci-app-set.git
+      branch: 'master'
+    pipeline: apps/maven-app/Jenkinsfile
     executeWhen: never
 
